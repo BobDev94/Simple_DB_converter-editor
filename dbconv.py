@@ -215,7 +215,6 @@ def db_operations(db_name):
                             cond=cond_e[0]+'='+'\''+f'{cond_e[1]}'+'\''
 
                         del_sel=f'DELETE FROM {table_name} WHERE {cond}'
-                        print(del_sel)
                         c.execute(del_sel)
                         conn.commit()
                 elif del_op==3:
